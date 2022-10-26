@@ -1,15 +1,21 @@
-const FeedbackStats = (props) => {
-    let avarage = props.feedback.reduce((acc,cur)=>{
+import PropTypes from 'prop-types';
+
+const FeedbackStats = ({feedback}) => {
+    let avarage = feedback.reduce((acc,cur)=>{
         return acc+cur.rating;
-    },0)/props.feedback.length;
+    },0)/feedback.length;
 
     avarage = avarage.toFixed(1).replace(/[.,]0$/,'');
   return (
     <div className="feedback-stats">
-        <h4>{props.feedback.length} Reviews</h4>
+        <h4>{feedback.length} Reviews</h4>
         <h4>Avarage rating: {isNaN(avarage)?0:avarage}</h4>
     </div>
   );
+}
+
+FeedbackStats.propTypes = {
+    feedback:PropTypes.array.isRequired,
 }
 
 export default FeedbackStats;
