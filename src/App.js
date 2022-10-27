@@ -1,4 +1,5 @@
 import React from 'react';
+import {v4 as uuidv4} from 'uuid';
 import Header from './components/Header';
 import FeedbackStats from './components/FeedbackStats';
 import FeedbackList from './components/FeedbackList';
@@ -19,11 +20,16 @@ function App() {
     }
   }
 
+  const addFeddback = (newFeedback)=>{
+    newFeedback.id = uuidv4();
+    setFeedback([newFeedback,... feedback])
+  }
+
   return (
     <React.Fragment>
       <Header title="Hey guy" />
       <div className='container'>
-        <FeedbackForm/>
+        <FeedbackForm handleFeddback={addFeddback}/>
         <FeedbackStats feedback={feedback}/>
         <FeedbackList feedback={feedback} handleDelete={deleteFeedback}/>
       </div>
