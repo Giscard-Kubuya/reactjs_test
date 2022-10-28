@@ -12,7 +12,7 @@ function RoutePages() {
     <Router>
       <Routes>
         <Route exact path="/about" element={<AboutPage />} />
-        <Route exact path="/post/:author/:position" element={<PostPage />} />
+        <Route exact path="/post" element={<PostPage />} />
         <Route exact path="/" element={<FeedbackHandle />} />
       </Routes>
     </Router>
