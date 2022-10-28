@@ -1,0 +1,19 @@
+{
+  "feedback": [
+    {
+      "id": 1,
+      "rating": 10,
+      "text": "Lorem opsum"
+    },
+    {
+      "id": 2,
+      "rating": 7,
+      "text": "Lorem opsum 2"
+    },
+    {
+      "id": 3,
+      "rating": 4,
+      "text": "Lorem opsum 3"
+    }
+  ]
+}
