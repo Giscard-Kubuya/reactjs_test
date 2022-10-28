@@ -14,6 +14,11 @@
       "id": 3,
       "rating": 4,
       "text": "Lorem opsum 3"
+    },
+    {
+      "rating": "8",
+      "text": "This is the text to show Chris",
+      "id": 4
     }
   ]
 }
