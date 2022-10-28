@@ -16,9 +16,14 @@
       "text": "Lorem opsum 3"
     },
     {
-      "rating": "8",
       "text": "This is the text to show Chris",
+      "rating": 2,
       "id": 4
+    },
+    {
+      "text": "Je remet le text",
+      "rating": 9,
+      "id": 5
     }
   ]
 }
